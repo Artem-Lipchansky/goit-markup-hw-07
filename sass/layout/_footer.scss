@@ -40,54 +40,55 @@
 
 .footer-address {
     font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    margin-bottom: 9px;
+    
+    display: block;
+
+    @include font(null, 14px, 1.71, 0.03em);
     display: block;
 }
 
 
 .footer-address-link {
-    color: var(--first-contrast-text-color);
+    color: $first-contrast-text-color;
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: var(--timing-function);
+    transition-timing-function: $timing-function;
 
-}
 
-.footer-address-link:hover,
-.footer-address-link:focus {
+
+&:hover,
+&:focus {
     color: var(--accent-color);
-
+  }
 }
 
 
 .footer-address-contact {
-    color: var(--second-contact-text-color);
+    color: $second-contact-text-color;
 
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
+&__:hover,
+&__:focus {
+    color: $accent-color;
+}
+
 }
 
 
-.footer-address-contact:hover,
-.footer-address-contact:focus {
-    color: var(--accent-color);
-}
+
 
 
 
 
 .footer-social-text,
 .footer-email-text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 1.14, 16px, 0.03em);
+    
+    
     text-transform: uppercase;
-    color: var(--first-contrast-text-color);
+    color: $first-contrast-text-color;
 
     margin-bottom: 20px;
 }
@@ -96,7 +97,7 @@
     margin-left: 70px;
 }
 
-.footer-social-list {
+.footer-social-list { 
     display: flex;
 }
 
@@ -160,7 +161,7 @@
     margin-right: 10px;
     transition-property: border;
     transition-duration: 250ms;
-    transition-timing-function: var(--timing-function);
+    transition-timing-function: $timing-function;
 }
 
 
@@ -171,7 +172,16 @@
 .footer-form {
     display: flex;
     align-items: center;
+    
 }
+
+
+
+.footer-form {
+    @extend %align-list;
+  }
+
+
 
 .footer-btn {
     margin-left: 12px;

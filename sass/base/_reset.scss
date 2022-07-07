@@ -36,7 +36,10 @@ img {
     height: auto;
 }
 
-
+::before,
+::after {
+  box-sizing: border-box;
+}
 
 
 
@@ -49,14 +52,15 @@ ul {
 }
 
 
-
+html,
 body {
-    font-family: "Roboto", sans-serif;
-    color: var(--text-color);
-    background-color: var(--primary-bg-color);
+  height: 100%;
+} 
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
 
-
-}
 
 
 ul {
@@ -72,3 +76,24 @@ img {
     display: block;
     height: auto;
 }
+
+input,
+button,
+textarea {
+  outline: none;
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3 {
+  overflow-wrap: break-word;
+}
+
+
+#root,
+#__next {
+  isolation: isolate;
+}
+

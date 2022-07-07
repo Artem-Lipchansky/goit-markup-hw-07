@@ -1,7 +1,25 @@
+
+/*# sourceMappingURL=main.css.map */ 
+
+:root {
+  --section-bg-color: #e5e5e5;
+  --accent-color: rgba(33, 150, 243, 1);
+  --first-contrast-text-color: rgba(255, 255, 255, 1);
+  --second-contact-text-color: rgba(255, 255, 255, 0.6);
+  --text-color: rgba(117, 117, 117, 1);
+  --primary-bg: rgba(255, 255, 255, 1);
+  --dark-bg-color: rgba(47, 48, 58, 1);
+  --title-text-color: rgba(33, 33, 33, 1);
+  --second-vector-color: rgba(255, 255, 255, 1);
+  --main-vector-color: rgba(175, 177, 184, 1);
+  --second-vector-color: rgba(255, 255, 255, 1);
+  --timing-function: (0.4, 0, 0.2, 1);
+}
+
+
 .header {
   border-bottom: 1px solid #ececec;
 }
-
 .site-nav,
 .team-list {
   display: flex;
@@ -249,20 +267,7 @@
   background-color: var(--section-bg-color);
 }
 
-:root {
-  --section-bg-color: #e5e5e5;
-  --accent-color: rgba(33, 150, 243, 1);
-  --first-contrast-text-color: rgba(255, 255, 255, 1);
-  --second-contact-text-color: rgba(255, 255, 255, 0.6);
-  --text-color: rgba(117, 117, 117, 1);
-  --primary-bg: rgba(255, 255, 255, 1);
-  --dark-bg-color: rgba(47, 48, 58, 1);
-  --title-text-color: rgba(33, 33, 33, 1);
-  --second-vector-color: rgba(255, 255, 255, 1);
-  --main-vector-color: rgba(175, 177, 184, 1);
-  --second-vector-color: rgba(255, 255, 255, 1);
-  --timing-function: (0.4, 0, 0.2, 1);
-}
+
 
 p,
 h1,
@@ -403,6 +408,22 @@ img {
 
 .button-list .btn + .btn {
   margin-left: 8px;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo__accent {
+  color: var(--title-text-color);
 }
 
 .backdrop {
@@ -728,17 +749,17 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.features-list {
+.features__list {
   display: flex;
 }
 
-.features-list .item {
+.features__list .features__item {
   margin-right: 30px;
   width: 270px;
   /*min-height: 75px;*/
 }
 
-.features-list .item:last-child {
+.features__list .item:last-child {
   margin-right: 0;
 }
 
@@ -748,7 +769,7 @@ img {
   padding-top: 94px;
 }
 
-.features-title {
+.features__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -759,7 +780,7 @@ img {
   margin-bottom: 10px;
 }
 
-.features-text {
+.features__text {
   line-height: 1.71;
   color: var(--text-color);
   margin-bottom: 12px;
@@ -767,7 +788,7 @@ img {
   min-height: 75px;
 }
 
-.features-icon {
+.features__icon {
   display: flex;
   width: 270px;
   height: 120px;
@@ -1096,7 +1117,7 @@ img {
   background-size: cover;
 }
 
-.hero-title {
+.title--hero{
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -1109,17 +1130,17 @@ img {
   margin-right: auto;
 }
 
-.team-name {
+.team__name {
   font-weight: 500;
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
 
-.team-list .team-item + .team-item {
+.team__list .team__item + .team__item {
   margin-left: 30px;
 }
 
-.team-item {
+.team__item {
   max-width: 270px;
   margin-left: 0;
   margin-right: 0;
@@ -1135,33 +1156,33 @@ img {
   display: block;
 }
 
-.team-content {
+.team__content {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-name {
+.team__name {
   font-weight: 500;
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
 
-.team-position {
+.team__position {
   color: var(--text-color);
   font-size: 16px;
   margin-bottom: 16px;
 }
 
-.team-social-list {
+.social {
   display: flex;
   justify-content: center;
 }
 
-.team-social-item:last-child {
+.social__item:last-child {
   margin-right: 0;
 }
 
-.team-social-link {
+.social__link--link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -1173,24 +1194,24 @@ img {
   transition-timing-function: var(--timing-function);
 }
 
-.team-social-icon {
+.social__icon {
   fill: var(--main-vector-color);
 }
 
-.team-title {
+.title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-.team-social-link:hover,
-.team-social-link:focus {
+.team__social:hover,
+.team__social:focus {
   background-color: var(--accent-color);
 }
 
-.team-social-link:hover .team-social-icon,
-.team-social-link:focus .team-social-icon {
+.team__social:hover .team-social-icon,
+.team__social:focus .team-social-icon {
   fill: var(--second-vector-color);
 }
 
@@ -1201,15 +1222,14 @@ img {
   letter-spacing: 0.03em;
 }
 
-.team-list .team-item + .team-item {
+.team__list .team__item + .team__item {
   margin-left: 30px;
 }
 
 .team {
   background-color: #F5F4FA;
 }
-
-.team-item {
+.team__item {
   max-width: 270px;
   margin-left: 0;
   margin-right: 0;
@@ -1225,12 +1245,12 @@ img {
   display: block;
 }
 
-.team-content {
+.team__content {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-name {
+.team__name {
   font-weight: 500;
   color: var(--title-text-color);
   margin-bottom: 10px;
@@ -1238,22 +1258,22 @@ img {
   line-height: 19px;
 }
 
-.team-social-list {
+.social {
   display: flex;
   justify-content: center;
 }
 
-.team-social-item {
+.social__item {
   height: 44px;
   width: 44px;
   margin-right: 10px;
 }
 
-.team-social-item:last-child {
+.social__item:last-child {
   margin-right: 0;
 }
 
-.team-social-link {
+.social__link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -1265,23 +1285,21 @@ img {
   transition-timing-function: var(--timing-function);
 }
 
-.team-social-icon {
+.social__icon {
   fill: var(--main-vector-color);
 }
 
-.team-social-link:hover,
-.team-social-link:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: var(--accent-color);
 }
 
-.team-social-link:hover .team-social-icon,
-.team-social-link:focus .team-social-icon {
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
   fill: var(--second-vector-color);
 }
 
-.work-title,
-.team-title,
-.client-title {
+title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -1290,14 +1308,14 @@ img {
   margin-bottom: 50px;
 }
 
-.work-list {
+.work__list {
   position: relative;
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.work-item-text {
+.work__text {
   display: flex;
   width: 370px;
   position: absolute;
