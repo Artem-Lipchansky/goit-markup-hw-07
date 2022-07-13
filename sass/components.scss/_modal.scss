@@ -146,10 +146,7 @@
  }
 
 
-
-
-
- .form-icon {
+    .form-icon {
      position: absolute;
      top: 35px;
      left: 11px;
@@ -255,10 +252,7 @@
     border-radius: 2px;
   }
 
- 
-
-
- .checkbox:checked+.checkbox-icon {
+    .checkbox:checked+.checkbox-icon {
      border-color: transparent;
      background-color: $accent-color;
      display: inline-block;
@@ -273,28 +267,14 @@
      background-size: contain;
      background-position: center;
 
+    }
 
-     
- }
-
-
-
-
- .checkbox:focus+.checkbox-icon {
+    .checkbox:focus+.checkbox-icon {
      border-color: var(--accent-color);
 
+    }
 
-
- }
-
-
-
-
-
- 
-
-
- .button.form-btn {
+     .button.form-btn {
 
      padding: 10px 55px;
      color: var(--first-contrast-text-color);
@@ -314,4 +294,4 @@
  &:hover,
  &:focus {
      background-color: rgba(24, 140, 232, 1);
- }
+ }}
