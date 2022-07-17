@@ -12,6 +12,12 @@
           margin-right: $basic-margin;
         }
       }
+
+      &.features__list__item {
+        margin-right: 30px;
+        width: 270px;
+        /*min-height: 75px;*/
+    }
   
       & .item:last-child {
         margin-right: 0;
@@ -21,15 +27,6 @@
 
 
 
-.features-list .item {
-    margin-right: 30px;
-    width: 270px;
-    /*min-height: 75px;*/
-}
-
-.features-list .item:last-child {
-    margin-right: 0;
-}
 
 
 

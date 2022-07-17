@@ -132,8 +132,8 @@
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-    background-color: var(--accent-color);
-    fill: #ffffff;
+    $accent-color: rgba(33, 150, 243, 1);
+    $icon-white: #fff;
     border: none;
 }
 
