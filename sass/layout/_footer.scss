@@ -2,7 +2,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2f303a;
-    ;
 }
 
 
@@ -41,10 +40,9 @@
 .footer-address {
     font-style: normal;
     
-    display: block;
 
     @include font(null, 14px, 1.71, 0.03em);
-    display: block;
+  
 }
 
 
@@ -84,7 +82,7 @@
 
 .footer-social-text,
 .footer-email-text {
-    @include font(700, 14px, 1.14, 16px, 0.03em);
+    @include font(700, 14px, 1.14, 0.03em);
     
     
     text-transform: uppercase;
