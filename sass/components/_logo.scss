@@ -1,18 +1,17 @@
- .logo {
-    margin-right: 93px;
-     padding-top: 24px;
-     padding-bottom: 25px;
-     color: $accent-color;
-    &__accent {
-       color: $title-text-color;
-     font-family: "Raleway", sans-serif;
-     @include font(700, 26px, 1.14, 0.03em);
+.logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
 
+  @include font(700, 26px, 1.14, 0.03em);
 
-    }
+  &__accent {
+    color: #000000;
+  }
 
- 
- &--footer {
+  &--footer {
     margin-bottom: 20px;
     display: block;
   }
