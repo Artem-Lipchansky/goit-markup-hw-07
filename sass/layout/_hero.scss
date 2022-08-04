@@ -13,15 +13,13 @@
   background-size: cover;
 }
 
-.title__title--hero {
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--first-contrast-text-color);
+.hero__title {
   width: 696px;
+  margin-bottom: 30px;
+
+  @include font(900, 44px, 1.36, 0.06em);
   margin-left: auto;
   margin-right: auto;
+  text-transform: uppercase;
+  color: $first-contrast-text-color;
 }

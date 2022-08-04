@@ -1,22 +1,24 @@
+/*
 .work-title,
 .team-title,
 .client-title {
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-    margin-bottom: 50px;
-}
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}*/
 
-.work { &__list {
+.work {
+  &__list {
     position: relative;
     display: flex;
     justify-content: center;
     gap: 30px;
-}
+  }
 
-&__text {
+  &__text {
     display: flex;
     width: 370px;
     position: absolute;
@@ -24,14 +26,46 @@
 
     @include font(700, 14px, 1.14, 0.03em);
 
-   
     text-transform: uppercase;
 
-    color:  $first-contrast-text-color;
+    color: $first-contrast-text-color;
     background-color: rgba(47, 48, 58, 0.8);
 
     justify-content: center;
     padding-top: 27px;
     padding-bottom: 27px;
+  }
 }
+/*
+.work-title,
+.team-title,
+.client-title {
+  font-size: 36px;
+  line-height: 1.16;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}*/
+
+.work-item-text {
+  display: flex;
+  width: 370px;
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--first-contrast-text-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  align-items: center;
+
+  justify-content: center;
 }
