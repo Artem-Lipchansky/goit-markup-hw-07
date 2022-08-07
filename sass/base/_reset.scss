@@ -3,7 +3,7 @@
   --accent-color: #2196f3;
   --first-contrast-text-color: rgba(255, 255, 255, 1);
   --second-contact-text-color: rgba(255, 255, 255, 0.6);
-  --text-color: var(117, 117, 117, 1);
+  --text-color: #757575;
   --primary-bg: #ffffff;
   --dark-bg-color: rgba(47, 48, 58, 1);
   --title-text-color: #212121;
@@ -55,13 +55,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-  height: auto;
-}
-
-input,
+.input,
 button,
 textarea {
   outline: none;
