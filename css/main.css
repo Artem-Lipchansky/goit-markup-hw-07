@@ -771,6 +771,11 @@ h3 {
     transition-duration: 250ms;
     transition-timing-function: $timing-function;
   }*/
+  /*.card-hover:hover,
+  .card-hover:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }*/
 }
 .clients__list {
   display: flex;
@@ -1021,6 +1026,13 @@ h3 {
 .gallery__item {
   width: 370px;
 }
+.gallery__item:hover, .gallery__item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.gallery__item:hover__list:hover, .gallery__item:hover__list:focus, .gallery__item:focus__list:hover, .gallery__item:focus__list:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: 250ms;
+}
 
 /*
   &__item {
@@ -1086,12 +1098,6 @@ h3 {
 .item:hover .card-content__action, .item:focus .card-content__action {
   opacity: 1;
   transform: translateY(0);
-}
-
-.card:hover,
-.card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: 250ms;
 }
 
 .gallery-list .item:nth-last-child(-n+3) {
@@ -1386,7 +1392,7 @@ h3 {
 .team__potition {
   font-weight: 500;
   color: var(--title-text-color);
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 .team__social {
   display: flex;

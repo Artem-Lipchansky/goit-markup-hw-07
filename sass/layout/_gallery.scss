@@ -8,6 +8,19 @@
   &__item {
     width: 370px;
   }
+
+  &__item:hover,
+  &__item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    &__list:hover,
+    &__list:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+      transition: 250ms;
+    }
+  }
 }
 
 /*
@@ -75,13 +88,6 @@
       transform: translateY(0);
     }
   }
-}
-
-.card:hover,
-.card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: 250ms;
 }
 
 .gallery-list .item:nth-last-child(-n + 3) {
